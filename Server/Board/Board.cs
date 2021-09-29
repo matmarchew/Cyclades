@@ -4,11 +4,11 @@ namespace Server.Board
 {
     public class Board
     {
-        private readonly ICreaturesPart _creaturesPart;
+        private readonly ICreatureStack _creatureStack;
 
-        public Board(ICreaturesPart creaturesPart)
+        public Board(ICreatureStack creatureStack)
         {
-            _creaturesPart = creaturesPart;
+            _creatureStack = creatureStack;
         }
     }
 }

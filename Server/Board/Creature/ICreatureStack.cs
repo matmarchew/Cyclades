@@ -2,7 +2,7 @@
 
 namespace Server.Board.Creature
 {
-    public interface ICreaturesPart
+    public interface ICreatureStack
     {
         void DiscardCard(ICreature creature);
         ICreature GetCard();

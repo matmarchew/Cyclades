@@ -4,15 +4,13 @@ using System.Collections.Generic;
 
 namespace Server.Board.Creature
 {
-    public class CreaturesPart : ICreaturesPart
+    public class CreatureStack : ICreatureStack
     {
-        private readonly ICreaturesTrack _creaturesTrack;
         private readonly IList<ICreature> _pendingCreatures;
         private readonly IList<ICreature> _discardedCreatures;
 
-        public CreaturesPart(ICreaturesTrack creaturesTrack, IList<ICreature> pendingCreatures)
+        public CreatureStack(IList<ICreature> pendingCreatures)
         {
-            _creaturesTrack = creaturesTrack;
             _pendingCreatures = pendingCreatures;
             _discardedCreatures = new List<ICreature>();
         }
